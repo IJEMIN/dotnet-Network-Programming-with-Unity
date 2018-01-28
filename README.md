@@ -1,8 +1,3 @@
-# Basic-Socket-Programming-with-Unity
+# Programming dotnet Network with Unity
 
-C# Basic Network Socket Programming with Unity
-
-C# 을 사용한 간단한 소켓 통신 프로그램 예제.
-UDP와 TCP 로 나눔. 초보자를 위한 주석이 달려있음.
-
-윈도우 이외의 환경에서는 동작하지 않음.
+.Net 환경에서 C# 을 이용한 유니티 네트워크 게임 프로그래밍 연습
