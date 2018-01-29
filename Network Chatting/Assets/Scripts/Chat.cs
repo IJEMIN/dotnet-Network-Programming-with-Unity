@@ -14,10 +14,9 @@ public class Chat : MonoBehaviour
 		
 	public string m_hostAddress {get; set;}
 	
-	private const int m_port = 50765;
+	private const int m_port = 50763;
 
 	private	bool m_isServer = false;
-	
 	
 	// Use this for initialization
 	void Start()
@@ -28,9 +27,8 @@ public class Chat : MonoBehaviour
 		
 		Debug.Log(hostEntry.HostName);
 		
-		m_hostAddress = hostAddress.ToString ();
+		m_hostAddress = "127.0.0.1";
 		m_transport.onStateChanged += OnEventHandling;
-		
 	}
 	
 	
