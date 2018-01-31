@@ -11,7 +11,7 @@ public class MessageInputField : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.Return) && !string.IsNullOrEmpty(inputField.text))
 		{
-			chat.SendMessage(inputField.text);
+			chat.Send(inputField.text);
 			inputField.text = string.Empty;
 		}
 	}
