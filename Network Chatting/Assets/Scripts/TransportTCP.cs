@@ -147,6 +147,7 @@ public class TransportTCP : MonoBehaviour
 			state.type = NetEventType.Connect;
 			state.result = (isConnected == true) ? NetEventResult.Success : NetEventResult.Failure;
 			
+			onStateChanged(state);
 			Debug.Log("Event Handler Called");
 		}
 

@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ChatText : MonoBehaviour {
+public class MessageText : MonoBehaviour {
 
-	public Text commentText;
+	public Text messageText;
+
 	public void SetUp(string message)
 	{
-		commentText.text = message;
+		messageText.text = message;
 	}
 
 }

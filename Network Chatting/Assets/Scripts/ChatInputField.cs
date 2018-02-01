@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MessageInputField : MonoBehaviour {
+public class ChatInputField : MonoBehaviour {
 
-	public Chat chat;
 	public InputField inputField;
+	public ChatManager chatManager;
 
-	void Update () {
+	void Update()
+	{
 		if(Input.GetKeyDown(KeyCode.Return) && !string.IsNullOrEmpty(inputField.text))
 		{
-			chat.Send(inputField.text);
+			chatManager.Send(inputField.text);
 			inputField.text = string.Empty;
 		}
 	}
+
 }
